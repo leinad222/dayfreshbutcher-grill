@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1d36c0aa30.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="header__title">Pri<span>me</span> Cu<span>ts</span></h1>
+    <nav>
+      <ul class="header__menus">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menus">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li> <!-- This link will now work correctly -->
+      </ul>
+      <div class="header__menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+  <!-- END HEADER -->
+
+  <!-- SECTION: HOME -->
+  <section id="home" class="section-home section-menu">
+    <div class="section-home__content">
+      <h1 class="section-home__title">Welcome to our <span>Resta</span>urant where smokey flavour lives !!</h1>
+      <div class="section-home__buttons">
+        <button class="primary-button">Contact Us</button>
+        <button class="light-button">Explore Us</button>
+      </div>
+    </div>
+    <img class="section-home__image" src="images/pad-thai.png" alt="Pad Thai">
+  </section>
+  <!-- END SECTION: HOME -->
+
+  <!-- SECTION: MENUS -->
+  <section id="menus" class="section-menus section-menu">
+    <h1 class="section-title">Our <span>Menus</span></h1>
+    <p class="section-desc">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, ullam accusamus atque impedit dolorem facilis placeat, perspiciatis optio quam facere architecto aperiam, consequatur est minus.
+    </p>
+
+    <div class="section-menus__cards">
+      <!-- CARD 1 -->
+      <div class="section-menus__card">
+        <img class="section-menus__card-image" src="images/roasted-chicken.png" alt="Roasted Chicken">
+        <h3 class="section-menus__card-title">Roasted Chicken</h3>
+        <div class="section-menus__card-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <span>4.3</span>
+        </div>
+        <div class="section-menus__card-footer">
+          <h2 class="section-menus__card-price">£3.90</h2>
+          <button class="primary-button">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="section-menus__card">
+        <img class="section-menus__card-image" src="images/grilled-shrimp.png" alt="Pad Thai">
+        <h3 class="section-menus__card-title">Pad Thai</h3>
+        <div class="section-menus__card-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <span>4.7</span>
+        </div>
+        <div class="section-menus__card-footer">
+          <h2 class="section-menus__card-price">£4.50</h2>
+          <button class="primary-button">
+            <i class="fa-solid fa-cart-shopping" class="cart"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="section-menus__card">
+        <img class="section-menus__card-image" src="images/pasta.png" alt="Pasta">
+        <h3 class="section-menus__card-title">Pasta</h3>
+        <div class="section-menus__card-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <span>4.7</span>
+        </div>
+        <div class="section-menus__card-footer">
+          <h2 class="section-menus__card-price">£5.00</h2>
+          <button class="primary-button">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <section id="about" class="section-about section-menu">
+            <img class="section-about__image" src="images/images.jpeg" alt="About Us">
+            <div class="section-about__content">
+              <h1 class="section-about__title">About <span>Us</span></h1>
+              <p class="section-about__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <span>4 years of experience in making delicious food.</span>
+            </p>
+             
+              <button class="primary-button">Learn More</button>
+            </div>
+        </section>
+             <section id="services" class="section-services section-menu">
+               <div class="section-services__container">
+                <h2 class="section-services__title">Our <span>Services</span></h2>
+                <p class="section-services__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="section-services__content">
+                  <div class="section-services__icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Fast Delivery</h3>
+                  </div>
+              <div class="section-services__icon">
+                <i class="fa-solid fa-bowl-food"></i>
+                <h3>Fresh Food</h3>
+              </div>
+              <div class="section-services__icon">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24/7 Support</h3>
+              </div>
+            </div>
+          </section>
+          <section id="contact" class="contact-section section-menu">
+    <div class="section-contact">
+        <h2 class="section-title">Contact <span>Us</span></h2>
+        <p class="section-desc">If you have any questions, feel free to reach out!</p>
+        <form class="section-contact__form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="primary-button">Send Message</button>
+        </form>
+        <div class="contact-address">123 Main Street, London</div>
+    </div>
+</section>
+      <!-- END SECTION: MENUS -->
+
+  <!-- FOOTER -->
+  <footer class="footer">Find us on Social Media
+    <div class="footer__socials">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <p class="footer__copy">&copy; 2024 Prime Cuts. All rights reserved.</p>
+    <p class="footer__copyright">Prime Cuts@ Since 2024  Creative Commons Reserved</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    // ScrollReveal setup (inactive for now)
+    ScrollReveal({
+      reset: true,
+      delay: 300,
+      distance: '60px',
+      duration: 1500,
+    });
+
+    // Mobile Menu Toggle
+    const headerMenuToggle = document.querySelector('.header__menu-toggle');
+    const headerMenus = document.querySelector('.header__menus');
+
+    headerMenuToggle.addEventListener('click', () => {
+      headerMenus.classList.toggle('active');
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
