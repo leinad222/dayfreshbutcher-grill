@@ -7,9 +7,29 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+}
+
+/* Make page a column flex so footer can sit at the bottom when content is short */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The main content area should grow to push the footer down */
+.site-main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* offset for fixed header so content doesn't sit underneath it */
+  padding-top: 100px;
 }
 
 :root {
@@ -407,26 +427,22 @@ footer {
   color: #fff;
   text-align: center;
   padding: 16px 0;
-  margin-top: 32px;
-  bottom: auto;
-  justify-content: center;
+  margin: 0; /* remove extra gap above footer */
+  position: relative;
 }
 
-.footer_socials {
+/* correct class names used in HTML and normalize paragraph spacing */
+.footer__socials {
   margin-top: 8px;
   display: flex;
   justify-content: center;
   gap: 16px;
 }
-.footer-copy {
-  margin-top: 8px;
+.footer__copy,
+.footer__copyright {
+  margin: 4px 0;
   font-size: 14px;
 }
-
-.footer-copyright {
-  margin-top: 8px;
-  font-size: 14px;
-} 
 /* SCROLLBAR STYLES */
 ::-webkit-scrollbar {
   width: 8px;
